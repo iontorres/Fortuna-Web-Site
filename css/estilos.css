@@ -3,6 +3,7 @@ body{
 	background: #1c1c1c;
 }
 
+
 /* ======================= ESTILO HEADER ================================*/
 #head{
 	width: 100%;
@@ -70,6 +71,29 @@ body{
 	width: 1000px;
 	margin: auto;
 }
+
+.tabs-content{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.content{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding: 0 ! important;
+}
+/* ++++++++++++ CONTACTO +++++++++++ */
+#contacto-cont{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff !important;
+}
+/* ++++++++++++ CONTACTO +++++++++++ */
+
+
 /* ======================= ESTILO BODY ================================*/
 
 /* ======================= ESTILO FOOTER ================================*/
@@ -96,3 +120,8 @@ footer{
 
 
 /* ======================= ESTILO FOOTER ================================*/
+
+
+
+
+
