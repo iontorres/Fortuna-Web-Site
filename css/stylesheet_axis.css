@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'axisbold';
+    src: url('../fonts/axis-webfont.eot');
+    src: url('../fonts/axis-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/axis-webfont.woff2') format('woff2'),
+         url('../fonts/axis-webfont.woff') format('woff'),
+         url('../fonts/axis-webfont.ttf') format('truetype'),
+         url('../fonts/axis-webfont.svg#axisbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
