@@ -65,6 +65,7 @@ body{
 	position: relative;
 	height: 600px;
 	background: red;
+	overflow-y:scroll; 
 }
 
 
