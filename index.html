@@ -5,9 +5,6 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Fortuna Estudio</title>
 	<link rel="shortcut icon" href="assets/iconball.ico">
-	<!-- Links FUNDATION Y ESTILOS PRINCIPALES-->
-	<link rel="stylesheet" href="css/foundation.css" />
-	<link rel="stylesheet" href="css/estilos.css">
 	<!-- Links FUENTES-->
   	<link rel="stylesheet" href="css/stylesheet_axis.css" />
 	<link rel="stylesheet" href="css/stylesheet_titillium.css" />
@@ -16,9 +13,13 @@
 	<!-- Links SLIDER // LIGHTBOX -->
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />   
   	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
-
+	<!-- Links FUNDATION Y ESTILOS PRINCIPALES-->
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/estilos.css">
 	<script src="js/vendor/modernizr.js"></script>
+	
 </head>
+
 <body>
 
 <section id="head">
@@ -124,7 +125,6 @@
 		    </article>
 
 	    </div>
-
 	  </div>
 	  <!-- ==================== TERIMA TAB BRANDING ================ -->
 
@@ -333,10 +333,10 @@
 	    <div id="contacto-cont">
 	    	<article class="izquierda">
 	    		<form action="">
-	    			<input class="datos" type="text">
-	    			<input class="datos" type="text">
+	    			<input class="datos" type="text" placeholder="Nombre">
+	    			<input class="datos" type="text" placeholder="Correo">
 	    			<br />
-	    			<textarea class="mensaje" name=""></textarea>
+	    			<textarea class="mensaje" name="" placeholder="Mensaje"></textarea>
 	    			<br />
 	    			<button class="enviar" type="submit">Enviar</button>
 	    		</form>
@@ -370,19 +370,8 @@
 	</div>
 
 </footer>
-
-<script>
-  $(document).foundation({
-    tab: {
-      callback : function (tab) {
-        console.log(tab);
-      }
-    }
-  });
-</script>
-
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script type="text/javascript">
+<script>
   var colors = [
   'Amarillo',
   'Azul',
@@ -393,135 +382,101 @@
 	var rando = 0;
 	 logo = colors[Math.floor(5 * Math.random())];
 
-	$(document).ready(function() {
+	 $(document).ready(function() {
 		$(".spacebar").delay(5000).fadeOut();
 	    $("#logo img").attr("src","assets/logos/"+ logo +".png");
 	    $("#flecha img").attr("src","assets/flechas/"+ logo +".png");
-	  });
 
 	if(logo == 'Amarillo'){
-		$("#menu-click").css("color","#f1ef86");
-		$("#menu-close").css("color","#f1ef86");
-		$(".active").css("color","#f1ef86");
-		$("#proyects").css("background-color","#f1ef86");
-		$("#servicios").css("background-color","#f1ef86");
-		$("#title-proyects h3").css("border","solid 1px #f1ef86");
 		$(".datos").css("border","solid 1px #f1ef86");
 		$(".mensaje").css("border","solid 1px #f1ef86");
-		$(".acontacto").hover(function() {
-  		$(this).css("background-color","#f1ef86")
-  		$(this).css("border","solid #f1ef86 1px")
-		}).mouseout(function(){
-		$(this).css("background-color","transparent")
-  		$(this).css("border","solid white 1px")
-		});
+		$(".tabs").css("border-bottom","solid #f1ef86 1px");
+		$(".text_block").css("border-bottom","solid #f1ef86 1px");
+		$(".right_border").css("border-right","solid #f1ef86 1px");
+
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#f1ef86")
   		$(this).css("border","solid #f1ef86 1px")
 		}).mouseout(function(){
 		$(this).css("background-color","transparent")
-  		$(this).css("border","solid white 1px")
+  		$(this).css("border","solid #f1ef86 1px")
 		});
 
 	}else if(logo == 'Azul'){
-		$("#menu-click").css("color","#9ad8db");
-		$("#menu-close").css("color","#9ad8db");
-		$(".active").css("color","#9ad8db");
-		$("#proyects").css("background-color","#9ad8db");
-		$("#servicios").css("background-color","#9ad8db");
-		$("#title-proyects h3").css("border","solid 1px #9ad8db");
 		$(".datos").css("border","solid 1px #9ad8db");
 		$(".mensaje").css("border","solid 1px #9ad8db");
-		$(".acontacto").hover(function() {
-  		$(this).css("background-color","#9ad8db")
-  		$(this).css("border","solid #9ad8db 1px")
-		}).mouseout(function(){
-		$(this).css("background-color","transparent")
-  		$(this).css("border","solid white 1px")
-		});
+		$(".tabs").css("border-bottom","solid #9ad8db 1px");
+		$(".text_block").css("border-bottom","solid #9ad8db 1px");
+		$(".right_border").css("border-right","solid #9ad8db 1px");
+
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#9ad8db")
   		$(this).css("border","solid #9ad8db 1px")
 		}).mouseout(function(){
 		$(this).css("background-color","transparent")
-  		$(this).css("border","solid white 1px")
+  		$(this).css("border","solid #9ad8db 1px")
 		});
 
 	}else if(logo == 'Naranja'){
-		$("#menu-click").css("color","#fbbb81");
-		$("#menu-close").css("color","#fbbb81");
-		$(".active").css("color","#fbbb81");
-		$("#proyects").css("background-color","#fbbb81");
-		$("#servicios").css("background-color","#fbbb81");
-		$("#title-proyects h3").css("border","solid 1px #fbbb81");
+		$("#menu-click").
 		$(".datos").css("border","solid 1px #fbbb81");
 		$(".mensaje").css("border","solid 1px #fbbb81");
-		$(".acontacto").hover(function() {
-  		$(this).css("background-color","#fbbb81")
-  		$(this).css("border","solid #fbbb81 1px")
-		}).mouseout(function(){
-		$(this).css("background-color","transparent")
-  		$(this).css("border","solid white 1px")
-		});
+		$(".tabs").css("border-bottom","solid #fbbb81 1px");
+		$(".text_block").css("border-bottom","solid #fbbb81 1px");
+		$(".right_border").css("border-right","solid #fbbb81 1px");
+
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#fbbb81")
   		$(this).css("border","solid #fbbb81 1px")
 		}).mouseout(function(){
 		$(this).css("background-color","transparent")
-  		$(this).css("border","solid white 1px")
+  		$(this).css("border","solid #fbbb81 1px")
 		});
 
 	}else if(logo == 'Rosa'){
-		$("#menu-click").css("color","#f38383");
-		$("#menu-close").css("color","#f38383");
-		$(".active").css("color","#f38383");
-		$("#proyects").css("background-color","#f38383");
-		$("#servicios").css("background-color","#f38383");
-		$("#title-proyects h3").css("border","solid 1px #f38383");
 		$(".datos").css("border","solid 1px #f38383");
 		$(".mensaje").css("border","solid 1px #f38383");
-		$(".acontacto").hover(function() {
-  		$(this).css("background-color","#f38383")
-  		$(this).css("border","solid #f38383 1px")
-		}).mouseout(function(){
-		$(this).css("background-color","transparent")
-  		$(this).css("border","solid white 1px")
-		});
+		$(".tabs").css("border-bottom","solid #f38383 1px");
+		$(".text_block").css("border-bottom","solid #f38383 1px");
+		$(".right_border").css("border-right","solid #f38383 1px");
+
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#f38383")
   		$(this).css("border","solid #f38383 1px")
 		}).mouseout(function(){
 		$(this).css("background-color","transparent")
-  		$(this).css("border","solid white 1px")
+  		$(this).css("border","solid #f38383  1px")
 		});
 
 	}else if(logo == 'Verde'){
-		$("#menu-click").css("color","#9bd3ad");
-		$("#menu-close").css("color","#9bd3ad");
-		$(".active").css("color","#9bd3ad");
-		$("#proyects").css("background-color","#9bd3ad");
-		$("#servicios").css("background-color","#9bd3ad");
-		$("#title-proyects h3").css("border","solid 1px #9bd3ad");
 		$(".datos").css("border","solid 1px #9bd3ad");
 		$(".mensaje").css("border","solid 1px #9bd3ad");
-		$(".acontacto").hover(function() {
-  		$(this).css("background-color","#9bd3ad")
-  		$(this).css("border","solid #9bd3ad 1px")
-		}).mouseout(function(){
-		$(this).css("background-color","transparent")
-  		$(this).css("border","solid white 1px")
-		});
+		$(".tabs").css("border-bottom","solid #9bd3ad 1px");
+		$(".text_block").css("border-bottom","solid #9bd3ad 1px");
+		$(".right_border").css("border-right","solid #9bd3ad 1px");
+		
 		$(".enviar").hover(function() {
-  		$(this).css("background-color","#9bd3ad")
+  		$(this).css("background-color","#9bd3ad ")
   		$(this).css("border","solid #9bd3ad 1px")
 		}).mouseout(function(){
 		$(this).css("background-color","transparent")
-  		$(this).css("border","solid white 1px")
+  		$(this).css("border","solid #9bd3ad 1px")
 		});
 
 
 	}
+	  });
 
+</script>
+
+<script>
+  $(document).foundation({
+    tab: {
+      callback : function (tab) {
+        console.log(tab);
+      }
+    }
+  });
 </script>
 
 
@@ -568,7 +523,5 @@
         $('.slider8').bxSlider();
     });
 </script>
-
-
 </body>
 </html>

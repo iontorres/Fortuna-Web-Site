@@ -1,5 +1,5 @@
 body{
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif !important;
 	background: #1c1c1c;
 }
 
@@ -25,7 +25,6 @@ body{
 	margin: auto;
 	width: 1200px;
 	max-width: 1200px;
-	border-bottom: solid #fff 1px;
 	padding-bottom: 10px;
 }
 
@@ -187,6 +186,48 @@ body{
 	margin: 0;
 	padding: 0;
 }
+
+.izquierda form{
+	position: relative;
+	margin: 0 auto;
+	width: 60%;
+	max-width:600px;
+	max-height: 600px;
+	min-width:400px;
+	min-height: 400px ;
+	text-align: center;
+}
+
+.datos{
+	width: 200px !important;
+	height: 40px !important;
+	background: #1c1c1c !important;
+	display: inline-block !important;
+	margin: 15px 15px !important;
+}
+
+.mensaje{
+	width: 435px !important;
+	height: 200px !important;
+	background: #1c1c1c !important;
+	display: inline-block !important;
+	margin: 0 15px !important;
+}
+
+.enviar{
+	width: 150px !important;
+	height: 40px !important;
+	margin: 15px 15px !important;
+	padding: 5px 10px;
+	background: transparent;
+	border: 1px solid;
+	color: white;
+	font-family: 'Titillium Web', sans-serif !important;
+	-webkit-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
 .derecha{
 	position: relative;
 	width: 50%;
@@ -194,22 +235,6 @@ body{
 	float: right;
 	margin: 0;
 	padding: 0;
-}
-
-.derecha form{
-	position: relative;
-	margin: auto;
-	width: 60%;
-	max-width:600px;
-	max-height: 600px;
-	min-width:400px;
-	min-height: 400px ;
-}
-
-.datos{
-	width: 100px;
-	height: 40px;
-	background: #c1c1c1;
 }
 
 /* ++++++++++++ CONTACTO +++++++++++ */
@@ -238,6 +263,7 @@ footer{
 	top: 20px;
 	left: 200px;
 	border-bottom: solid #fff 1px;
+	margin: -2px;
 }
 
 .text_block p{
