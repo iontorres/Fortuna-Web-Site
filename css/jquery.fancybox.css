@@ -37,6 +37,8 @@
 .fancybox-opened {
 	z-index: 8030;
 	width:100% !important;
+	top: 0px !important;
+	left: 0px !important;
 }
 
 
@@ -53,7 +55,7 @@
 
 .fancybox-inner {
 	overflow: hidden;
-	width: 900px !important;
+	width: 100% !important;
 	margin: auto;
 	position: relative;
 	top: 20px;
@@ -107,7 +109,7 @@
 .fancybox-close {
 	background: url('../images/close.png') left top  no-repeat;	
 	position: absolute;
-	top: -10px;
+	top: 0px;
 	right: 40px;
 	width: 40px;
 	height: 40px;
@@ -205,8 +207,8 @@
 }
 
 .fancybox-lock .fancybox-overlay {
-	overflow: auto;
-	overflow-y: scroll;
+	overflow: hidden;
+	overflow-y: hidden;
 }
 
 /* Title helper */

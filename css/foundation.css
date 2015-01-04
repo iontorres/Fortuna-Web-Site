@@ -2969,8 +2969,10 @@ meta.foundation-mq-topbar {
 .orbit-container {
   overflow: hidden;
   width: 100%;
+  height: 600px;
   position: relative;
-  background: none; }
+  background: none; 
+}
   .orbit-container .orbit-slides-container {
     list-style: none;
     margin: 0;
@@ -2997,6 +2999,7 @@ meta.foundation-mq-topbar {
         font-size: 0.875rem; }
   .orbit-container .orbit-slide-number {
     position: absolute;
+    display: none;
     top: 10px;
     left: 10px;
     font-size: 12px;
@@ -3008,6 +3011,7 @@ meta.foundation-mq-topbar {
       padding: 0.3125rem; }
   .orbit-container .orbit-timer {
     position: absolute;
+    display: none;
     top: 12px;
     right: 10px;
     height: 6px;
@@ -3073,31 +3077,31 @@ meta.foundation-mq-topbar {
     .orbit-container .orbit-prev > span {
       border-right-style: solid;
       border-color: transparent;
-      border-right-color: white; }
+      border-right-color: #5be08b; }
     .orbit-container .orbit-prev:hover > span {
-      border-right-color: white; }
+      border-right-color: #5be08b; }
   .orbit-container .orbit-next {
     right: 0; }
     .orbit-container .orbit-next > span {
       border-color: transparent;
       border-left-style: solid;
-      border-left-color: white;
+      border-left-color: #5be08b;
       left: 50%;
       margin-left: -4px; }
     .orbit-container .orbit-next:hover > span {
-      border-left-color: white; }
+      border-left-color: #5be08b; }
 
 .orbit-bullets-container {
   text-align: center; }
 
 .orbit-bullets {
+  display: none;
   margin: 0 auto 30px auto;
   overflow: hidden;
   position: relative;
   top: 10px;
   float: none;
-  text-align: center;
-  display: block; }
+  text-align: center; }
   .orbit-bullets li {
     cursor: pointer;
     display: inline-block;

@@ -73,9 +73,32 @@ body{
 	z-index: 99;
 	padding: 0px 15px;
 }
+.proyect_inner_info{
+	width: 350px;
+	height: 135px;
+	position: absolute;
+	bottom: 120px;
+	left: 37%;
+	z-index: 999;
+	border:solid #000 1px;
+}
 
-.contra{
-	width: 1280px !important;
+.proyect_inner_info h1{
+	font-size: 14px;
+	color: #000;
+	font-family: 'axisbold';
+}
+
+.proyect_inner_info h2{
+	font-size: 12px;
+	color: #666;
+	font-family: 'titilliumregular';
+}
+
+.proyect_inner_info p{
+	font-size: 12px;
+	color: #000;
+	font-family: 'titilliumregular';
 }
 
 /* +++++++++++++++++++ LightBox y Slider Estilo +++++++++++++++++++++++ */
@@ -171,6 +194,85 @@ body{
 
 
 /* ++++++++++++ BRANDING ++++++++++++ */
+
+/* ++++++++++++ INTERACTIVOS ++++++++++++ */
+
+.interactivos_proyecto{
+	display: inline-block;
+	width: 215px;
+	height: 215px;
+	position: relative;
+	margin: 50px 50px;
+	cursor: pointer;
+}
+
+.interactivos_info_proyecto h1{
+	color: #ffffff !important;
+	font-family: 'titilliumbold' !important;
+	font-size: 14px !important;
+	text-align: left !important;
+	margin: 0 !important;
+	padding-bottom: 0px !important;
+}
+
+.interactivos_info_proyecto p{
+	color: #ffffff !important;
+	font-size: 12px !important;
+	text-align: left !important;
+	margin: 0 !important;
+	font-family: 'titilliumregular' !important;
+}
+
+.intercativos_project{
+	position: relative;
+	top: 0px;
+	background: red;
+}
+
+.interactivos_proyecto img{
+	width: 100%;
+	height:100%;
+	-webkit-filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	-o-filter:grayscale(100%);
+	filter:grayscale(100%);
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.interactivos_proyecto img:hover{
+	width: 100%;
+	height:100%;
+	-webkit-filter:grayscale(0%);
+	-moz-filter:grayscale(0%);
+	-o-filter:grayscale(0%);
+	filter:grayscale(0%);
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+/* ++++++++++++ INTERACTIVOS ++++++++++++ */
+
+/* ++++++++++++ NOSOTROS ++++++++++++ */
+#nosotros_info{
+	margin: auto;
+	position: relative;
+	width: 600px;
+	padding-top: 100px;
+}
+
+#nosotros_info p{
+	color: #fff;
+	font-family: 'titilliumregular' !important;
+	text-align: left;
+}
+/* ++++++++++++ NOSOTROS ++++++++++++ */
 
 /* ++++++++++++ CONTACTO +++++++++++ */
 #contacto-cont{
