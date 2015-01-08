@@ -109,7 +109,7 @@
 .fancybox-close {
 	background: url('../images/close.png') left top  no-repeat;	
 	position: absolute;
-	top: 0px;
+	top: 30px;
 	right: 40px;
 	width: 40px;
 	height: 40px;
@@ -197,7 +197,7 @@
 	display: none;
 	z-index: 8010;
 	/*background: url('../images/section-ourplayground/fancybox/fancybox_overlay.png');*/
-	background: rgba(0,0,0, 0.7);
+	background: rgba(0,0,0, 0.8);
 }
 
 .fancybox-overlay-fixed {
