@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" /> 
 	<!-- Links FUNDATION Y ESTILOS PRINCIPALES-->
 	<link rel="stylesheet" href="css/foundation.css" />
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilos.css">
 	<script src="js/vendor/modernizr.js"></script>
 	
@@ -22,13 +23,26 @@
 <body>
 
 <section id="head">
-	<div class="wrapper">
+	
 		<div id="logo">
 			<img src="" alt="">
 		</div>
-	</div>
 
-<dl class="tabs" data-tab>
+  <div id="abre-menu">
+    <a href="#" id="open">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <a href="#" id="close">
+      <i class="fa fa-close"></i>
+    </a>
+
+  </div>
+
+</section>
+
+<section id="menu">
+  <dl class="tabs" data-tab>
   <dd class="active"><a href="#panel1">.BRANDING</a></dd>
   <dd><a href="#panel2">.INTERACTIVOS</a></dd>
   <dd><a href="#panel3">.ESPACIOS</a></dd>
@@ -38,8 +52,6 @@
   <dd><a href="#panel7">.ESTRATEGIA</a></dd>
   <dd><a href="#panel8">.CONTACTO</a></dd>
 </dl>
-
-
 </section>
 
 <section id="info">
@@ -175,7 +187,8 @@
   		</div>
   		<div class="proyect_description">
   			<h1> GAMBUSINO</h1>
-  			<p> Shalala lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala </p>
+  			<p> Una empresa dedicada a la venta de botas, especialmente para personas que gustan de este tipo de calzado, pero que viven en la ciudad y quieren vestir casual. </p>
+        <p>Nuestro trabajo fue crear la marca desde cero, desde escoger el nombre, que nos remite a los buscadores de minerales durante la fiebre de oro del siglo XIX que exploraban terreno de Estados Unidos y Canadá. Así como también, desarrollar el logotipo y elegir los colores para el branding y el landing page. </p>
   		</div>
   	</div>
    	
@@ -441,13 +454,32 @@
 			</p>
 		</div>
 	  </div>
-	   <div class="content" id="panel5">
+	  
+    <div class="content" id="panel5">
 	    <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
 	  </div>
-	  <div class="content" id="panel6">
-	    <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+	  
+    <div class="content" id="panel6">
+	 
+     <div class="video_container">
+       <div class="black_layer">
+          <div class="video_description">
+              <h1> GEARCOM </h1>
+              <p> Descripción breve la nieve y shala la lalalala! shala la lalalala! shala la lalalala! nshala la lalalala! shala la lalalala! shala la lalalala! shala la lalalala! shala la lalalala! shala la lalalala! shala la lalalala! shala la lalalala!</p>
+
+              <p> Para ver más:</p>
+              <a> http://vimeo.com/101174138 </a>
+          </div>
+       </div>
+        <video class="video_player" autoplay loop width="100%" height="1280px">
+            <source src="video/gearcom_web_video.webm" type='video/webm;codecs="vp8, vorbis"'/>
+            <source src="video/gearcom_web_video.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+        </video>  
+        </div>
 	  </div>
-	  <div class="content" id="panel7">
+	  
+
+    <div class="content" id="panel7">
 	    <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
 	  </div>
 	   <div class="content" id="panel8">
@@ -522,9 +554,10 @@
 	if(logo == 'Amarillo'){
 		$(".datos").css("border","solid 1px #f1ef86");
 		$(".mensaje").css("border","solid 1px #f1ef86");
-		$(".tabs").css("border-bottom","solid #f1ef86 1px");
+		$("#menu").css("border-bottom","solid #f1ef86 1px");
 		$(".text_block").css("border-bottom","solid #f1ef86 1px");
 		$(".right_border").css("border-right","solid #f1ef86 1px");
+    $(".active a").css("color","#f1ef86");
 
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#f1ef86")
@@ -537,9 +570,10 @@
 	}else if(logo == 'Azul'){
 		$(".datos").css("border","solid 1px #9ad8db");
 		$(".mensaje").css("border","solid 1px #9ad8db");
-		$(".tabs").css("border-bottom","solid #9ad8db 1px");
+		$("#menu").css("border-bottom","solid #9ad8db 1px");
 		$(".text_block").css("border-bottom","solid #9ad8db 1px");
 		$(".right_border").css("border-right","solid #9ad8db 1px");
+    $(".active a").css("color","#9ad8db");
 
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#9ad8db")
@@ -550,12 +584,12 @@
 		});
 
 	}else if(logo == 'Naranja'){
-		$("#menu-click").
 		$(".datos").css("border","solid 1px #fbbb81");
 		$(".mensaje").css("border","solid 1px #fbbb81");
-		$(".tabs").css("border-bottom","solid #fbbb81 1px");
+		$("#menu").css("border-bottom","solid #fbbb81 1px");
 		$(".text_block").css("border-bottom","solid #fbbb81 1px");
 		$(".right_border").css("border-right","solid #fbbb81 1px");
+    $(".active a").css("color","#fbbb81");
 
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#fbbb81")
@@ -568,9 +602,10 @@
 	}else if(logo == 'Rosa'){
 		$(".datos").css("border","solid 1px #f38383");
 		$(".mensaje").css("border","solid 1px #f38383");
-		$(".tabs").css("border-bottom","solid #f38383 1px");
+		$("#menu").css("border-bottom","solid #f38383 1px");
 		$(".text_block").css("border-bottom","solid #f38383 1px");
 		$(".right_border").css("border-right","solid #f38383 1px");
+    $(".active a").css("color","#f38383");
 
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#f38383")
@@ -583,9 +618,10 @@
 	}else if(logo == 'Verde'){
 		$(".datos").css("border","solid 1px #9bd3ad");
 		$(".mensaje").css("border","solid 1px #9bd3ad");
-		$(".tabs").css("border-bottom","solid #9bd3ad 1px");
+		$("#menu").css("border-bottom","solid #9bd3ad 1px");
 		$(".text_block").css("border-bottom","solid #9bd3ad 1px");
 		$(".right_border").css("border-right","solid #9bd3ad 1px");
+    $(".active a").css("color","#9bd3ad");
 		
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#9bd3ad ")
@@ -617,6 +653,24 @@
 <script>
   $(document).ready(function(){
         $(".fancybox").fancybox();
+    });
+</script>
+
+<script type="text/javascript">
+$("#open").click(function(){
+
+      $("#menu").animate({"height" : "100px"});
+      $(this).fadeOut("fast");
+      $("#close").delay(300).fadeIn("slow");
+
+    });
+
+$("#close").click(function(){
+
+      $("#menu").animate({"height" : "0px"});
+      $(this).fadeOut("fast");
+      $("#open").delay(300).fadeIn("slow");
+
     });
 </script>
 </body>

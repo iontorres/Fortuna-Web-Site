@@ -4,28 +4,57 @@ body{
 }
 
 /* ======================= ESTILO HEADER ================================*/
+
+#abre-menu{
+	position: absolute;
+	display: inline-block;
+	right: 100px;
+	top: 23px;
+}
+
+#open{
+	color: #fff;
+	font-size: 18px;
+}
+#close{
+	color: #fff;
+	display: none;
+	font-size: 18px;
+}
+
 #head{
 	width: 100%;
-	height: 280px;
+	height: 70px;
 	position: relative;
 }
 
 #logo{
 	margin: auto;
-	text-align: center;
-	padding: 60px 0px;
+	text-align: left;
+	padding: 20px 30px;
 }
 
 #logo img{
-	width: 60%;
-	max-width: 350px;
+	width: 30%;
+	max-width: 150px;
+}
+
+#menu{
+	position: absolute;
+	top: 70px;
+	width: 100%;
+	background: rgba(28,28,28,0.7);
+	z-index: 999;
+	padding: 0px 0px;
+	height: 0px;
+	overflow: hidden;
 }
 
 .tabs{
 	margin: auto;
 	width: 1200px;
 	max-width: 1200px;
-	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 .tabs dd{
@@ -98,7 +127,7 @@ body{
 	background: transparent;
 	position: fixed;
 	top: 60px;
-	padding: 20px 30px;
+	padding: 20px 35px;
 	height: 100%;
 	overflow-x:hidden;
 	overflow-y:scroll;  
@@ -114,21 +143,24 @@ body{
 	color: #fff;
 	font-family: 'Titillium Web', sans-serif !important;
 	font-size: 12px;
+	text-align: justify;
+	line-height: 25px;
 }
 /* +++++++++++++++++++ LightBox y Slider Estilo +++++++++++++++++++++++ */
 
 #info{
 	width: 100%;
 	position: relative;
-	height: 600px;
-	background: red;
-	overflow-y:scroll; 
+	height: 700px;
+	background: #1c1c1c;
+	overflow-y:scroll;
 }
 
 
 .wrapper{
 	width: 1000px;
 	margin: auto;
+	padding-bottom:100px; 
 }
 
 .tabs-content{
@@ -151,7 +183,7 @@ body{
 	width: 215px;
 	height: 215px;
 	position: relative;
-	margin: 50px 50px;
+	margin: 55px 50px;
 	cursor: pointer;
 }
 
@@ -273,6 +305,58 @@ body{
 
 /* ++++++++++++ INTERACTIVOS ++++++++++++ */
 
+/* ++++++++++++ AUDIOVISUAL +++++++++++ */
+
+.black_layer{
+	width: 100%;
+	height: 1280px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	z-index: 3;
+}
+
+.video_player{
+	position: relative;
+	top: -290px;
+
+}
+.video_container{
+	width: 100%;
+	height: 800px;
+	position: relative;
+	overflow-y: hidden;
+}
+
+.video_description{
+	display: inline-block;
+	width: 600px;
+	height: 800px;
+	position: absolute;
+	right: 0px;
+	padding:250px 120px;
+}
+
+.video_description h1{
+	color: #fff;
+	font-family: 'axisbold';
+	font-size: 22px;
+}
+
+.video_description p{
+	color: #fff;
+	font-family: 'titilliumregular' !important;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.video_description a{
+	color: #fff;
+	font-family: 'titilliumregular' !important;
+}
+
+/* ++++++++++++ AUDIOVISUAL +++++++++++ */
+
+
 /* ++++++++++++ NOSOTROS ++++++++++++ */
 #nosotros_info{
 	margin: auto;
@@ -361,9 +445,11 @@ body{
 /* ======================= ESTILO FOOTER ================================*/
 footer{
 	width: 100%;
-	height: 250px;
-	padding: 50px 5px;
-
+	height: 190px;
+	padding: 5px 5px;
+	position: fixed;
+	bottom: 0px;
+	background: #1c1c1c;
 }
 .bold{
 	font-family: 'titilliumbold';
