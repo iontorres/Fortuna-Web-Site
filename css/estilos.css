@@ -74,17 +74,13 @@ body{
 	font-size: 18px; 
 }
 
-.tabs dd a:hover{
-	background: transparent;
-	font-family: 'axisbold';
-	color: #fff;
+
+
+.active a:focus{
+	background: transparent ! important;
+	
 }
 
-.tabs dd.active a{
-	background: transparent;
-	font-family: 'axisbold';
-	color: #fff;
-}
 
 /* ======================= ESTILO HEADER ================================*/
 
@@ -241,6 +237,19 @@ body{
 
 /* ++++++++++++ BRANDING ++++++++++++ */
 
+/* ++++++++++++ WEB ++++++++++++ */
+
+.no-border{
+	border-bottom: none !important;
+}
+
+.proyect_gallery a{
+	color:#fff;
+	font-size: 18px;
+}
+
+/* ++++++++++++ WEB ++++++++++++ */
+
 /* ++++++++++++ INTERACTIVOS ++++++++++++ */
 
 .interactivos_proyecto{
@@ -310,7 +319,7 @@ body{
 .black_layer{
 	width: 100%;
 	height: 1280px;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.3);
 	position: absolute;
 	z-index: 3;
 }
@@ -322,7 +331,7 @@ body{
 }
 .video_container{
 	width: 100%;
-	height: 800px;
+	height: 720px;
 	position: relative;
 	overflow-y: hidden;
 }
@@ -339,14 +348,14 @@ body{
 .video_description h1{
 	color: #fff;
 	font-family: 'axisbold';
-	font-size: 22px;
+	font-size: 50px;
 }
 
 .video_description p{
 	color: #fff;
 	font-family: 'titilliumregular' !important;
 	font-size: 16px;
-	line-height: 20px;
+	line-height: 5px;
 }
 
 .video_description a{
@@ -362,7 +371,8 @@ body{
 	margin: auto;
 	position: relative;
 	width: 600px;
-	padding-top: 100px;
+	top: 250px;
+	padding: 15px 15px 15px 15px;
 }
 
 #nosotros_info p{
@@ -377,20 +387,27 @@ body{
 	position: relative;
 	width: 100%;
 	height: 100%;
+	padding-top: 200px;
 }
+
+#map {
+    width: 600px;
+    height: 300px;
+}
+
 .izquierda{
 	position: relative;
-	width: 50%;
+	width: 45%;
 	height: 100%;
-	float: left;
-	margin: 0;
+	display: inline-block;
+	margin-right: 50px;
 	padding: 0;
 }
 
 .izquierda form{
 	position: relative;
 	margin: 0 auto;
-	width: 60%;
+	width: 500px;
 	max-width:600px;
 	max-height: 600px;
 	min-width:400px;
@@ -399,11 +416,11 @@ body{
 }
 
 .datos{
-	width: 200px !important;
+	width: 210px !important;
 	height: 40px !important;
 	background: #1c1c1c !important;
 	display: inline-block !important;
-	margin: 15px 15px !important;
+	margin: 15px 5px !important;
 }
 
 .mensaje{
@@ -430,9 +447,9 @@ body{
 
 .derecha{
 	position: relative;
-	width: 50%;
+	width: 45%;
 	height: 100%;
-	float: right;
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 }
