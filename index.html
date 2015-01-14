@@ -50,7 +50,7 @@
   <dd class="menu-li"><a href="#panel4">.NOSOTROS</a></dd>
   <dd class="menu-li"><a href="#panel5">.WEB</a></dd>
   <dd class="menu-li"><a href="#panel6">.AUDIOVISUAL</a></dd>
-  <dd class="menu-li"><a href="#panel7">.ESTRATEGIA</a></dd>
+  <!-- <dd class="menu-li"><a href="#panel7">.ESTRATEGIA</a></dd> -->
   <dd class="menu-li"><a href="#panel8">.CONTACTO</a></dd>
 </dl>
 </section>
@@ -112,7 +112,7 @@
 			      	</div>
 		    </article>
 
-		    <article id="evento6" href="#proyecto7" class="branding_proyecto fancybox">
+		    <article id="evento7" href="#proyecto7" class="branding_proyecto fancybox">
 		      	<img src="img/simsa-color.jpg" alt="Hola, Aqui hay un proyecto de branding, en caso que no lo veas">
 			      	<div class="branding_info_proyecto">
 			      		<h1>SIMSA</h1>
@@ -120,7 +120,7 @@
 			      	</div>
 		    </article>
 
-		    <article id="evento6" href="#proyecto8" class="branding_proyecto fancybox">
+		    <article id="evento8" href="#proyecto8" class="branding_proyecto fancybox">
 		      	<img src="img/terraya-color.jpg" alt="Hola, Aqui hay un proyecto de branding, en caso que no lo veas">
 			      	<div class="branding_info_proyecto">
 			      		<h1>LA TERRAYA</h1>
@@ -128,7 +128,7 @@
 			      	</div>
 		    </article>
 
-		     <article id="evento6" href="#proyecto9" class="branding_proyecto fancybox">
+		     <article id="evento9" href="#proyecto9" class="branding_proyecto fancybox">
 		      	<img src="img/wexhol-color.jpg" alt="Hola, Aqui hay un proyecto de branding, en caso que no lo veas">
 			      	<div class="branding_info_proyecto">
 			      		<h1>We Xhol</h1>
@@ -440,8 +440,33 @@
 
     <!-- ESPACIOS -->
 	  <div class="content" id="panel3">
-	    <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+
+	    <ul class="example-orbit" data-orbit>
+        <li class="active">
+          <img src="img/espacios/gearcom_espacios4.jpg" alt="slide 4" />
+        </li>
+        <li>
+          <img src="img/espacios/gearcom_espacios7.jpg" alt="slide 7" />
+        </li>
+        <li>
+          <img src="img/espacios/gearcom_espacios1.jpg" alt="slide 1" />
+        </li>
+        <li>
+          <img src="img/espacios/gearcom_espacios2.jpg" alt="slide 2" />
+        </li>
+        <li>
+          <img src="img/espacios/gearcom_espacios3.jpg" alt="slide 3" />
+        </li>
+        <li>
+          <img src="img/espacios/gearcom_espacios5.jpg" alt="slide 5" />
+        </li>
+        <li>
+          <img src="img/espacios/gearcom_espacios6.jpg" alt="slide 6" />
+        </li>
+        
+      </ul>
 	  </div>
+
 
     <!-- NOSOTROS -->
 	  <div class="content" id="panel4">
@@ -500,10 +525,19 @@
                     <p> Web </p>
                   </div>
             </article>
+
+            <article id="evento15" href="#proyecto15" class="branding_proyecto fancybox">
+                <img src="img/landing-color.jpg" alt="Hola, Aqui hay un proyecto de branding, en caso que no lo veas">
+                  <div class="branding_info_proyecto">
+                    <h1>LANDING FOLIO </h1>
+                    <p> Web </p>
+                  </div>
+            </article>
+
         </div>
 	  </div>
 	  
-      <!-- ========  AQUI VAN LOS LIGHTBOX DE TAB BRANDING ============ -->
+      <!-- ========  AQUI VAN LOS LIGHTBOX DE TAB WEB ============ -->
 
 <div class="hide">
   <div id="proyecto11" class="info gallery">
@@ -603,6 +637,41 @@
 
   </div>
 </div>
+
+
+<div class="hide">
+  <div id="proyecto15" class="info gallery">
+
+    <div class="proyect_content">
+      <div class="proyect_gallery"> 
+        <ul>
+          <li><img src="img/web/landing_web_1.jpg"></li>
+          <li class="no-border" > <a href="http://khronosmx.com/" target="_blank"> Visita el sitio </a> </li>
+
+          <li><img src="img/web/landing_web_2.jpg"></li>
+          <li class="no-border" > <a href="http://gambusino.mx/" target="_blank"> Visita el sitio </a> </li>
+
+          <li><img src="img/web/landing_web_3.jpg"></li>
+          <li class="no-border" > <a href="http://ngsmex.com/" target="_blank"> Visita el sitio </a> </li>
+
+          <li><img src="img/web/landing_web_4.jpg"></li>
+          <li class="no-border" > <a href="http://zermenoluque.com/" target="_blank"> Visita el sitio </a> </li>
+
+          <li><img src="img/web/landing_web_5.jpg"></li>
+          <li class="no-border" > <a href="http://alcestudio.mx/" target="_blank"> Visita el sitio </a> </li>
+          
+        </ul>
+      </div>
+      <div class="proyect_description">
+        <h1> LANDING FOLIO </h1>
+
+        <p> Landing Pages diseñadas y programadas por Fortuna Estudio para distintos clientes, cada una de acuerdo a sus necesidades. </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 
 
@@ -738,6 +807,8 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+      $(document).foundation('orbit', 'reflow');
+
     </script>
 
 
@@ -768,6 +839,7 @@
     $(".active a").css("color","#f1ef86");
     $("#map").css("border","solid #f1ef86 1px");
     $("#nosotros_info").css("border","solid #f1ef86 1px");
+    $(".orbit-container .orbit-next > span").css("border-left-color","#f1ef86");
 
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#f1ef86")
@@ -786,6 +858,8 @@
     $(".active a").css("color","#9ad8db");
     $("#map").css("border","solid #9ad8db 1px");
     $("#nosotros_info").css("border","solid #9ad8db 1px");
+    $(".orbit-container .orbit-next > span").css("border-left-color","#9ad8db");
+    $(".orbit-container .orbit-prev > span").css("border-right-color","#9ad8db");
 
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#9ad8db")
@@ -804,6 +878,8 @@
     $(".active a").css("color","#fbbb81");
     $("#map").css("border","solid #fbbb81 1px");
     $("#nosotros_info").css("border","solid #fbbb81 1px");
+    $(".orbit-container .orbit-next > span").css("border-left-color","#fbbb81");
+    $(".orbit-container .orbit-prev > span").css("border-right-color","#fbbb81");
 
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#fbbb81")
@@ -822,6 +898,8 @@
     $(".active a").css("color","#f38383");
     $("#map").css("border","solid #f38383 1px");
     $("#nosotros_info").css("border","solid #f38383 1px");
+    $(".orbit-container .orbit-next > span").css("border-left-color","#f38383");
+    $(".orbit-container .orbit-prev > span").css("border-right-color","#f38383");
 
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#f38383")
@@ -840,6 +918,8 @@
     $(".active a").css("color","#9bd3ad");
     $("#map").css("border","solid #9bd3ad 1px");
     $("#nosotros_info").css("border","solid #9bd3ad 1px");
+    $(".orbit-container .orbit-next > span").css("border-left-color","#9bd3ad");
+    $(".orbit-container .orbit-prev > span").css("border-right-color","#9bd3ad");
 		
 		$(".enviar").hover(function() {
   		$(this).css("background-color","#9bd3ad ")

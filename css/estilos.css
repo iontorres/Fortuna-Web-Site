@@ -512,6 +512,204 @@ footer{
 
 /* ======================= ESTILO FOOTER ================================*/
 
+/* ======================== RESPONSIVE ================================ */
 
+@media only screen and (max-width : 980px) {
+	.wrapper{
+		width: 650px;
+		padding-bottom: 200px;
+	}
+
+	.text_block_down{
+	width: 800px;
+	position: relative;
+	top: 40px;
+	padding: 5px 130px;
+	left: 60px;
+	}
+
+	.text_block{
+	display: inline-block;
+	width: 290px;
+	padding: 10px 50px;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	border-bottom: solid #fff 1px;
+	margin: -2px;
+	}
+
+	.video_description{
+	display: inline-block;
+	width: 400px;
+	height: 800px;
+	position: absolute;
+	right: 0px;
+	padding:200px 80px;
+	}
+
+	.tabs{
+		margin: auto;
+		width: 600px;
+		max-width: 600px;
+		padding-top: 10px;
+	}
+
+	#menu{
+	position: absolute;
+	top: 70px;
+	width: 100%;
+	background: rgba(28,28,28,0.7);
+	z-index: 999;
+	padding: 0px 0px;
+	height: 0px;
+	overflow: hidden;
+	}
+
+	.tabs{
+		margin: auto;
+		width: 800px;
+		max-width: 800px;
+		padding-top: 10px;
+	}
+
+	.tabs dd{
+		margin: 5px 18px;
+		float: none;
+		display: inline-block;
+		width: 160px;
+		background: transparent;
+
+	}
+	.tabs dd a{
+		padding: 40px;
+		background: transparent;
+		text-align: left;
+		font-family: 'axisbold';
+		color: #fff;
+		font-size: 15px; 
+	}
+
+	.proyect_description{
+	width: 300px;
+	display: inline-block;
+	background: transparent;
+	position: fixed;
+	top: 60px;
+	right: -12px;
+	padding: 20px 40px;
+	height: 100%;
+	overflow-x:hidden;
+	overflow-y:scroll;  
+	}
+
+	#nosotros_info{
+	margin: auto;
+	position: relative;
+	width: 600px;
+	top: 100px;
+	padding: 15px 15px 15px 15px;
+	}
+
+}
+
+@media only screen and (max-width : 1024px) {
+	.wrapper{
+		width: 980px;
+		padding-bottom: 200px;
+	}
+
+	.text_block_down{
+	width: 800px;
+	position: relative;
+	top: 40px;
+	padding: 5px 130px;
+	left: 270px;
+	}
+
+	.text_block{
+	display: inline-block;
+	width: 290px;
+	padding: 10px 50px;
+	position: relative;
+	top: 20px;
+	left: 220px;
+	border-bottom: solid #fff 1px;
+	margin: -2px;
+	}
+
+	.video_description{
+	display: inline-block;
+	width: 400px;
+	height: 800px;
+	position: absolute;
+	right: 0px;
+	padding:200px 80px;
+	}
+
+	.tabs{
+		margin: auto;
+		width: 600px;
+		max-width: 600px;
+		padding-top: 10px;
+	}
+
+	#menu{
+	position: absolute;
+	top: 70px;
+	width: 100%;
+	background: rgba(28,28,28,0.7);
+	z-index: 999;
+	padding: 0px 0px;
+	height: 0px;
+	overflow: hidden;
+	}
+
+	.tabs{
+		margin: auto;
+		width: 800px;
+		max-width: 800px;
+		padding-top: 10px;
+	}
+
+	.tabs dd{
+		margin: 5px 18px;
+		float: none;
+		display: inline-block;
+		width: 160px;
+		background: transparent;
+
+	}
+	.tabs dd a{
+		padding: 40px;
+		background: transparent;
+		text-align: left;
+		font-family: 'axisbold';
+		color: #fff;
+		font-size: 15px; 
+	}
+
+	.proyect_description{
+	width: 300px;
+	display: inline-block;
+	background: transparent;
+	position: fixed;
+	top: 60px;
+	right: -12px;
+	padding: 20px 40px;
+	height: 100%;
+	overflow-x:hidden;
+	overflow-y:scroll;  
+	}
+
+	#nosotros_info{
+	margin: auto;
+	position: relative;
+	width: 600px;
+	top: 100px;
+	padding: 15px 15px 15px 15px;
+	}
+
+}
 
 
