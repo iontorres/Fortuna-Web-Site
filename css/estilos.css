@@ -74,13 +74,10 @@ body{
 	font-size: 18px; 
 }
 
+.tabs dd a:focus{
+	outline: none !important;
 
-
-.active a:focus{
-	background: transparent ! important;
-	
 }
-
 
 /* ======================= ESTILO HEADER ================================*/
 
@@ -676,7 +673,6 @@ footer{
 
 	}
 	.tabs dd a{
-		padding: 40px;
 		background: transparent;
 		text-align: left;
 		font-family: 'axisbold';
